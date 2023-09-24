@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/animation.css">
+  <script rel="text/javascript" src="Javascript/script.js" defer></script>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-left">
+        <div><img src="assets/logo.svg" alt="logo SNAP"></div>
+        <ul class="nav">
+          <li class="categories on--hover-black features">
+            <div>Features</div><span><img src="assets/icon-arrow-down.svg" alt="arrow down to reveal hide menu"></span>
+          </li>
+          <li class="categories on--hover-black company">
+            <div>Company</div><span><img src="assets/icon-arrow-down.svg" alt="arrow down to reveal hide menu"></span>
+          </li>
+          <li class="categories">Careers</li>
+          <li class="categories on--hover-black">About</li>
+        </ul>
+      </div>
+      <div class="button-nav">
+        <div class="login on--hover-black">Login</div>
+        <button class="on--hover-black">Register</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <wrapper class="feature-menu" id="feature">
+      <div class="wrapper-menu">
+        <ul class="menu smaller--shadow" id="feature-wrap">
+          <li class="menu-cat"><img class="icon" src="assets/icon-todo.svg" alt="todo list icon"><div>Todo list</div></li>
+          <li class="menu-cat"><img class="icon" src="assets/icon-calendar.svg" alt="calendar icon"><div>Calendar</div></li>
+          <li class="menu-cat"><img class="icon" src="assets/icon-reminders.svg" alt="reminders app"><div>Reminder</div></li>
+          <li class="menu-cat"><img class="icon" src="assets/icon-planning.svg" alt="planning icon"><div>Icon</div></li>
+        </ul>
+      </div>
+    </wrapper>
+    <wrapper class="company-menu" id="company">
+      <div class="wrapper-menu">
+        <ul class="menu ">
+          <li class="menu-cat"><div>History</div></li>
+          <li class="menu-cat"><div>Our Team</div></li>
+          <li class="menu-cat"><div>Blog</div></li>
+        </ul>
+      </div>
+    </wrapper>
+    <div class="mobile-hero">
+      <img class="mobile-hero-img" src="assets/image-hero-mobile.png" alt="Hero of the site. Holding a laptop with abstract art behind him.">
+    </div>
+    <section class="main-page">
+      <div class="hero-page-left">
+        <div class="text-hero">
+          <div class="main-title">
+            <h1 class="title">Make remote Work</h1>
+          </div>
+          <div class="paragraph">
+            Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </div>
+          <div class="learnmore-btn">
+            <button class="button--black on--hover button--transparent">Learn more</button>
+          </div>
+        </div>
+        <div class="client-links">
+          <div class="client"><img class="client-img" src="assets/client-databiz.svg"
+              alt="Logo of a client named 'Databiz'"></div>
+          <div class="client"><img class="client-img" src="assets/client-audiophile.svg"
+              alt="Logo of a client named 'Audiophile'"></div>
+          <div class="client"><img class="client-img" src="assets/client-meet.svg" alt="Logo of a client named 'Meet'">
+          </div>
+          <div class="client"><img class="client-img" src="assets/client-maker.svg"
+              alt="Logo of a client named 'Maker'"></div>
+        </div>
+      </div>
+      <div class="hero-page-right">
+        <div class="hero">
+          <img class="hero-img" src="assets/image-hero-desktop.png"
+            alt="Hero of the site. Holding a laptop with abstract art behind him.">
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>

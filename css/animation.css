@@ -1,0 +1,19 @@
+.on--hover-black{
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.on--hover-black:hover{
+    color: var(--AlmostBlack);
+    stroke: black;
+    border-color: var(--AlmostBlack);
+}
+
+.button--transparent:hover{
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.button--transparent{
+    transition: background-color 5s ease-in-out;
+}
