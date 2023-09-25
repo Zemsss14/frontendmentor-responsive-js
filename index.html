@@ -7,7 +7,6 @@
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/animation.css">
   <script rel="text/javascript" src="Javascript/script.js" defer></script>
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -31,7 +30,7 @@
         <div><img src="assets/logo.svg" alt="logo SNAP"></div>
         <ul class="nav hide-on-mobile">
           <li class="categories on--hover-black features">
-            <div>Features</div><span><img src="assets/icon-arrow-down.svg" alt="arrow down to reveal hide menu"></span>
+            <div>Features</div><span><svg class="on--hover-black" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" class="on--hover-black" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg></span>
           </li>
           <li class="categories on--hover-black company">
             <div>Company</div><span><img src="assets/icon-arrow-down.svg" alt="arrow down to reveal hide menu"></span>
@@ -41,7 +40,7 @@
         </ul>
       </div>
       <div class="button-nav hide-on-mobile">
-        <div class="login on--hover-black">Login</div>
+        <div><a class="on--hover-black" href="">Login</a></div>
         <button class="on--hover-black">Register</button>
       </div>
       <div class="menu-mobile"><img class="menu-icon-mobile" src="assets/icon-menu.svg" alt="menu icon"></div>
@@ -55,8 +54,8 @@
         <div class="menu-categories-mobile">
           <ul class="mobile-nav-categories">
             <li class="mobile-categorie features-mobile">
-              <div class="mobile-feature">Features<span><img src="assets/icon-arrow-down.svg" alt="arrow down to reveal hide menu"></span></div>
-              <div class="feature-sub-mobile" id="feature-nav-mobile">
+              <div class="mobile-categories-wrapper" id="mobile-feature">Features<span><img class="open" id="arrow-down-feat-mob" src="assets/icon-arrow-down.svg" alt="arrow down to reveal feature menu"><img id="arrow-up-feat-mob" src="assets/icon-arrow-up.svg" alt="arrow up to hide feature menu"></span></div>
+              <div class="sub-cat-mobile" id="feature-nav-mobile">
                 <ul class="mobile-menu-list" id="feature-wrap">
                   <li class="menu-cat"><img class="icon" src="assets/icon-todo.svg" alt="todo list icon">
                     <div>Todo list</div>
@@ -73,14 +72,27 @@
               </div>
             </li>
             <li class="mobile-categorie company">
-              <div>Company</div><span><img src="assets/icon-arrow-down.svg" alt="arrow down to reveal hide menu"></span>
+              <div class="mobile-categories-wrapper" id="mobile-company">Company<span><img class="open" id="arrow-down-comp-mob" src="assets/icon-arrow-down.svg" alt="arrow down to reveal company menu"><img id="arrow-up-comp-mob" src="assets/icon-arrow-up.svg" alt="arrow up to hide company menu"></span></div>
+              <div class="sub-cat-mobile" id="company-nav-mobile">
+                <ul class="mobile-menu-list">
+                  <li class="menu-cat">
+                    <div>History</div>
+                  </li>
+                  <li class="menu-cat">
+                    <div>Our Team</div>
+                  </li>
+                  <li class="menu-cat">
+                    <div>Blog</div>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="mobile-categorie">Careers</li>
             <li class="mobile-categorie">About</li>
           </ul>
         </div>
         <div class="login-register-mobile">
-          <div class="login on--hover-black">Login</div>
+          <div><a class="on--hover-black" href="">Login</a></div>
           <button class="on--hover-black mobile--button">Register</button>
         </div>
       </div>
@@ -155,10 +167,6 @@
       </div>
     </section>
   </main>
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 </body>
 
 </html>
