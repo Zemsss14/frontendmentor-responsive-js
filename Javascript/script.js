@@ -9,7 +9,10 @@ const wrapper_company = document.querySelector("#company");
 const wrapper_menu = document.querySelector("#mobile-menu");
 const mobile_nav_container = document.querySelector(".mobile-nav-container");
 
-var is_open_feature, is_open_company, is_open_menu, is_open_feature_mob = false;
+var is_open_feature = false;
+var is_open_company = false;
+var is_open_menu = false;
+var is_open_feature_mob = false;
 
 feature.addEventListener("click", open_close_feature);
 company.addEventListener("click", open_close_company);
