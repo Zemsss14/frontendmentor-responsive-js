@@ -29,7 +29,7 @@
     <nav>
       <div class="nav-left">
         <div><img src="assets/logo.svg" alt="logo SNAP"></div>
-        <ul class="nav">
+        <ul class="nav hide-on-mobile">
           <li class="categories on--hover-black features">
             <div>Features</div><span><img src="assets/icon-arrow-down.svg" alt="arrow down to reveal hide menu"></span>
           </li>
@@ -40,34 +40,87 @@
           <li class="categories on--hover-black">About</li>
         </ul>
       </div>
-      <div class="button-nav">
+      <div class="button-nav hide-on-mobile">
         <div class="login on--hover-black">Login</div>
         <button class="on--hover-black">Register</button>
       </div>
+      <div class="menu-mobile"><img class="menu-icon-mobile" src="assets/icon-menu.svg" alt="menu icon"></div>
     </nav>
   </header>
   <main>
-    <wrapper class="feature-menu" id="feature">
-      <div class="wrapper-menu">
-        <ul class="menu smaller--shadow" id="feature-wrap">
-          <li class="menu-cat"><img class="icon" src="assets/icon-todo.svg" alt="todo list icon"><div>Todo list</div></li>
-          <li class="menu-cat"><img class="icon" src="assets/icon-calendar.svg" alt="calendar icon"><div>Calendar</div></li>
-          <li class="menu-cat"><img class="icon" src="assets/icon-reminders.svg" alt="reminders app"><div>Reminder</div></li>
-          <li class="menu-cat"><img class="icon" src="assets/icon-planning.svg" alt="planning icon"><div>Icon</div></li>
-        </ul>
+    <wrapper class="mobile-menu" id="mobile-menu">
+      <div class="mobile-nav-container">
+        <div class="close-menu"><img class="close-menu-img" src="assets/icon-close-menu.svg" alt="cross icon to close mobile navigation bar">
+        </div>
+        <div class="menu-categories-mobile">
+          <ul class="mobile-nav-categories">
+            <li class="mobile-categorie features-mobile">
+              <div class="mobile-feature">Features<span><img src="assets/icon-arrow-down.svg" alt="arrow down to reveal hide menu"></span></div>
+              <div class="feature-sub-mobile" id="feature-nav-mobile">
+                <ul class="mobile-menu-list" id="feature-wrap">
+                  <li class="menu-cat"><img class="icon" src="assets/icon-todo.svg" alt="todo list icon">
+                    <div>Todo list</div>
+                  </li>
+                  <li class="menu-cat"><img class="icon" src="assets/icon-calendar.svg" alt="calendar icon">
+                    <div>Calendar</div>
+                  </li>
+                  <li class="menu-cat"><img class="icon" src="assets/icon-reminders.svg" alt="reminders app">
+                    <div>Reminder</div>
+                  </li>
+                  <li class="menu-cat"><img class="icon" src="assets/icon-planning.svg" alt="planning icon">
+                    <div>Icon</div>
+                  </li>
+              </div>
+            </li>
+            <li class="mobile-categorie company">
+              <div>Company</div><span><img src="assets/icon-arrow-down.svg" alt="arrow down to reveal hide menu"></span>
+            </li>
+            <li class="mobile-categorie">Careers</li>
+            <li class="mobile-categorie">About</li>
+          </ul>
+        </div>
+        <div class="login-register-mobile">
+          <div class="login on--hover-black">Login</div>
+          <button class="on--hover-black mobile--button">Register</button>
+        </div>
       </div>
+    </wrapper>
+    <wrapper class="feature-menu" id="feature">
+        <div class="wrapper-menu">
+          <ul class="menu smaller--shadow" id="feature-wrap">
+            <li class="menu-cat"><img class="icon" src="assets/icon-todo.svg" alt="todo list icon">
+              <div>Todo list</div>
+            </li>
+            <li class="menu-cat"><img class="icon" src="assets/icon-calendar.svg" alt="calendar icon">
+              <div>Calendar</div>
+            </li>
+            <li class="menu-cat"><img class="icon" src="assets/icon-reminders.svg" alt="reminders app">
+              <div>Reminder</div>
+            </li>
+            <li class="menu-cat"><img class="icon" src="assets/icon-planning.svg" alt="planning icon">
+              <div>Icon</div>
+            </li>
+          </ul>
+        </div>
     </wrapper>
     <wrapper class="company-menu" id="company">
       <div class="wrapper-menu">
         <ul class="menu ">
-          <li class="menu-cat"><div>History</div></li>
-          <li class="menu-cat"><div>Our Team</div></li>
-          <li class="menu-cat"><div>Blog</div></li>
+          <li class="menu-cat">
+            <div>History</div>
+          </li>
+          <li class="menu-cat">
+            <div>Our Team</div>
+          </li>
+          <li class="menu-cat">
+            <div>Blog</div>
+          </li>
         </ul>
       </div>
     </wrapper>
     <div class="mobile-hero">
-      <img class="mobile-hero-img" src="assets/image-hero-mobile.png" alt="Hero of the site. Holding a laptop with abstract art behind him.">
+      <img class="mobile-hero-img" src="assets/image-hero-mobile.png"
+        alt="Hero of the site. Holding a laptop with abstract art behind him.">
     </div>
     <section class="main-page">
       <div class="hero-page-left">
@@ -80,7 +133,7 @@
             create team rituals, and watch productivity soar.
           </div>
           <div class="learnmore-btn">
-            <button class="button--black on--hover button--transparent">Learn more</button>
+            <button class="button--black transparent-button-hover">Learn more</button>
           </div>
         </div>
         <div class="client-links">
