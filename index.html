@@ -6,21 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script rel="text/javascript" src="Javascript/script.js" defer></script>
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -29,14 +18,14 @@
       <div class="nav-left">
         <div><img src="assets/logo.svg" alt="logo SNAP"></div>
         <ul class="nav hide-on-mobile">
-          <li class="categories on--hover-black features">
-            <div>Features</div><span><svg class="on--hover-black" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" class="on--hover-black" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg></span>
+          <li class="categories features on--hover-black">
+            <div class="pointer-cursor mobile-categories-wrapper">Features<img class="open" id="feat-down-pc" src="assets/icon-arrow-down.svg" alt="arrow down to show the feature sub-menu"><img id="feat-up-pc" src="assets/icon-arrow-up.svg" alt="arrow up to wrap the feature sub-menu"></div>
           </li>
-          <li class="categories on--hover-black company">
-            <div>Company</div><span><img src="assets/icon-arrow-down.svg" alt="arrow down to reveal hide menu"></span>
+          <li class="categories on--hover-black company pointer-cursor">
+            <div class="mobile-categories-wrapper">Company <img class="open" id="comp-down-pc" src="assets/icon-arrow-down.svg" alt="arrow down to show the company sub-menu"><img id="comp-up-pc" src="assets/icon-arrow-up.svg" alt="arrow up to wrap the company sub-menu"></div>
           </li>
           <li class="categories">Careers</li>
-          <li class="categories on--hover-black">About</li>
+          <li class="categories pointer-cursor on--hover-black">About</li>
         </ul>
       </div>
       <div class="button-nav hide-on-mobile">
@@ -140,9 +129,9 @@
           <div class="main-title">
             <h1 class="title">Make remote Work</h1>
           </div>
-          <div class="paragraph">
-            Get your team in sync, no matter your location. Streamline processes,
-            create team rituals, and watch productivity soar.
+          <div class="paragraph-container">
+              <p class="paragraph">Get your team in sync, no matter your location. Streamline processes,
+              create team rituals, and watch productivity soar.</p>
           </div>
           <div class="learnmore-btn">
             <button class="button--black transparent-button-hover">Learn more</button>

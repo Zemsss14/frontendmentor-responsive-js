@@ -27,6 +27,7 @@ button{
     border: 1px var(--MediumGray) solid;
     color: var(--MediumGray);
     background-color: var(--Almostgrey);
+    cursor: pointer;
 }
 
 .button--black {
@@ -89,6 +90,10 @@ li{
     justify-content: center;
 }
 
+.pointer-cursor{
+    cursor: pointer;
+}
+
 .button-nav{
     display: flex;
     align-items: center;
@@ -124,13 +129,21 @@ li{
     height: 100%;
 }
 
+.main-title{
+    overflow: hidden;
+}
+
 .title{
     
     font-size: 6em;
 }
 
-.paragraph{
+.paragraph-container{
     width: 400px;
+    overflow: hidden;
+}
+
+.paragraph{
     line-height: 1.5;
     color: var(--MediumGray);
 }
@@ -138,7 +151,13 @@ li{
 .client-links {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
+    height:60px;
+    overflow: hidden;
+}
+
+.client-img{
+    height: fit-content;
 }
 
 .hero{
@@ -272,7 +291,7 @@ li{
     padding: 20px 0px 0px 30px;
 }
 
-#arrow-up-feat-mob,#arrow-down-feat-mob ,#arrow-down-comp-mob, #arrow-up-comp-mob{
+#comp-down-pc, #comp-up-pc,#feat-up-pc, #feat-down-pc, #arrow-up-feat-mob,#arrow-down-feat-mob ,#arrow-down-comp-mob, #arrow-up-comp-mob{
     display: none;
 }
 
