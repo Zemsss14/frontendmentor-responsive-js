@@ -7,6 +7,7 @@ const feature = document.querySelector(".features");
 const wrapper_feature = document.querySelector("#feature");
 const arrow_down_feat_pc = document.querySelector("#feat-down-pc");
 const arrow_up_feat_pc = document.querySelector("#feat-up-pc");
+
 feature.addEventListener("click", open_close_feature);
 
 function open_close_feature(){
